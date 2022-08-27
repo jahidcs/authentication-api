@@ -1,5 +1,15 @@
 # Django Rest Framework Authentication Project
 
+### Functionality
+
+    Custom user creation
+    User registration
+    User signin/login
+    change password
+    reset password link sending by email
+    reset password
+    user profile/info view
+
 ### Packages used
 
 1. django
@@ -17,3 +27,5 @@
 5. Create superuser for access admin panel: python3 manage.py createsuperuser
    - provide email, name, password
 6. Run in localhost: python3 manage.py runserver
+
+#### Note: To test the apis in postman, import api collection [Tele Health.postman_collection.json] file in postman
