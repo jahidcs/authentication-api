@@ -18,9 +18,10 @@
     django-cors-headers
     django-dotenv
 
-### Project run steps
+### Project run steps[Linux]
 
     1. Initialize venv: python3 -m virtualenv venv
+        Activate venv: source/venv/bin/activate
     2. Install packages: pip install -r requirements.txt
     3. Create migration file: python3 manage.py makemigrations
     4. Apply migration: python3 manage.py migrate
