@@ -1,0 +1,166 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tele Health",
+		"_postman_id": "36eb4777-0f1e-3b24-a294-4c06ad4dd97c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/register/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"name\": \"Maria\",\n\t\"password\": \"pass1234\",\n\t\"password2\": \"pass123\"\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/login/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"password\":\"pass134\"\n\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/login/"
+			},
+			"response": []
+		},
+		{
+			"name": "User password change",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/changepassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"password\":\"pass134\"\n\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/changepassword/"
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password email",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/send-reset-password-email/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"password\":\"pass134\"\n\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/send-reset-password-email/"
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/send-reset-password-email/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"password\":\"pass134\"\n\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/reset-password/<uid>/<token>/"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile View",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/profile/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNTY0MjYzLCJpYXQiOjE2NjE1NjA2NjMsImp0aSI6IjMzYzc2MjRmMmM4YzRjZGE4YWJiZTViZmJhNThjZDZiIiwidXNlcl9pZCI6NH0.tRyPj19UGrHqd3Vxf4er0CIrqziDUnukw9eRXfw8M1k",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"maria@gmail.com\",\n\t\"password\":\"pass134\"\n\n}"
+				},
+				"description": "http://127.0.0.1:8000/api/user/profile/"
+			},
+			"response": []
+		}
+	]
+}

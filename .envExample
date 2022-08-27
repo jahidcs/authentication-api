@@ -1,0 +1,3 @@
+EMAIL_USER = 'user@telehealth.com'
+EMAIL_PASS = 'xxxxxxxxxxxxx'
+EMAIL_FROM = 'user@telehealth.com'
